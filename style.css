@@ -1,0 +1,123 @@
+* {
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+body {
+    text-align: center;
+    height: 100%;
+    width: 100%;
+    background-color: rgb(129, 196, 212);
+}
+
+svg {
+    width: 100%;
+    overflow: visible;
+}
+.main{
+    width: 100%;
+    height: 100vh;
+}
+
+#ball0,
+#ball1,
+#ball2,
+#ball3,
+#ball4,
+#ball5,
+#ball6,
+#ball7 {
+    animation: float-ball 3s infinite linear alternate;
+    transform-origin: center;
+    transform-box: fill-box;
+}
+
+#right-hand {
+    animation: right-hand 3s ease-in-out infinite alternate;
+    transform-origin: top;
+    transform-box: fill-box;
+}
+#left-hand {
+    animation: left-hand 3s ease-in-out infinite alternate;
+    transform-origin: top;
+    transform-box: fill-box;
+}
+#shirt , #pant, #head, #hair, #left-foot, #right-foot{
+    animation: float-body 3s ease-in-out infinite alternate;
+    transform-origin: top;
+    transform-box: fill-box;
+}
+#cardboard{
+    animation: cardboard 3s ease-in-out infinite alternate;
+    transform-origin: top;
+    transform-box: fill-box;
+}
+#heart{
+    animation: heart 3s ease-in-out infinite alternate;
+    transform-origin: top;
+    transform-box: fill-box;
+}
+#ballcard{
+    animation: ballcard 3s ease-in-out infinite alternate;
+    transform-origin: top;
+    transform-box: fill-box;
+
+}
+@keyframes float-ball {
+    from {
+        transform: translateY(0%);
+    }
+    to {
+        transform: translateY(-30px);
+    }
+}
+
+@keyframes right-hand {
+    from {
+        transform: rotate(0deg) translateY(0px);
+    }
+    to {
+        transform: rotate(-10deg) translateY(-30px);
+    }
+}
+@keyframes left-hand {
+    from {
+        transform: rotate(0deg) translateY(0px);
+    }
+    to {
+        transform: rotate(10deg) translateY(-30px);
+    }
+}
+@keyframes float-body {
+    from {
+        transform: translateY(0%);
+    }
+    to {
+        transform: translateY(-30px);
+    }
+}
+@keyframes cardboard {
+    from {
+        transform: translateY(0%) rotate(0deg);
+    }
+    to {
+        transform: translateY(-30px) rotate(-10deg)  ;
+    }
+}
+@keyframes heart {
+    from {
+        transform: translateY(0%) rotate(25deg);
+    }
+    to {
+        transform: translateY(-10px) rotate(-25deg);
+    }
+}
+@keyframes ballcard {
+    from {
+        transform: translateY(0%) rotate(30deg);
+    }
+    to {
+        transform: translateY(-30px) rotate(-30deg);
+    }
+}
