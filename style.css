@@ -6,18 +6,7 @@
 
 body {
     text-align: center;
-    height: 100%;
-    width: 100%;
     background-color: rgb(129, 196, 212);
-}
-
-svg {
-    width: 100%;
-    overflow: visible;
-}
-.main{
-    width: 100%;
-    height: 100vh;
 }
 
 #ball0,
